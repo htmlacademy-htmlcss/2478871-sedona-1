@@ -7,10 +7,10 @@
   <body>
     <header class="page-header">
       <a href="#" class="logo-link">
-        <img src="#" alt="" class="logo-image">
+        <img src="#" alt="Логотип города" class="logo-image">
       </a>
       <nav class="navigation">
-        <ul class="main-menu">
+        <ul class="main-menu-list">
           <li class="main-menu-item">
             <a class="main-menu-link" href="#" >Главная</a>
           </li>
@@ -21,7 +21,7 @@
             <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="user-menu">
+        <ul class="user-menu-list">
           <li class="user-menu-item">
             <a class="user-menu-link" href="#">
               <span class="visually-hidden">
@@ -43,17 +43,19 @@
       </nav>
     </header>
     <main class="main-index">
-      <section>
+      <section class="welcome">
+        <h1 class="main-title">Приветствие</h1>
+        <span class="visually-hidden">
+          Welcome to the georgius Sedona
+        </span>
         <img class="image.png" src="#" alt="Панорама">
-        <h1 class="main-title">Welcome to the georgius Sedona</h1>
-        <h2 class="main-subtitle">Because the Grand Canion sucks!</h2>
       </section>
-      <section>
-        <p class="sedona-city">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="sedona-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <section class="preview">
+        <h1 class="sedona-city">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h2 class="sedona-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
       </section>
-      <section>
-        <ul class="reasons">
+      <section class="reasons">
+        <ul class="reasons-list">
           <li class="reasons-item">
             <h3 class="reasons-title">Настоящий городок</h3>
             <p class="reasons-descriptions">Седона - не атрракцион для туристов, там течет своя жизнь</p>
@@ -77,46 +79,41 @@
             <img class="bridge.png" src="#" alt="Мост">
         </ul>
       </section>
-      <section>
-        <p class="invitation">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-        <p class="service">Опытный персонал и качественное обслуживание!</p>
-      <ul class="service">
+      <section class="invitation">
+        <h2 class="invitation-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <h3 class="service">Опытный персонал и качественное обслуживание!</h3>
+      <ul class="service-list">
       <li class="service-item">
         <h3 class="service-title">Жилье</h3>
-        <p class="service-descriptions">Рекомендуем пожить в настоящем мотеле,
-          всё как в кино!</p>
-          <img class="house.png" src="#" alt="Дом">
+        <p class="service-descriptions">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </li>
       <li class="service-item">
         <h3 class="service-title">Еда</h3>
-        <p class="service-descriptions">Всегда заказывайте
-          топовый фирменный бургер, вы не разочаруетесь!</p>
-          <img class="burger.png" src="#" alt="Бургер">
+        <p class="service-descriptions">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
       </li>
       <li class="service-item">
         <h3 class="service-title">Сувениры</h3>
-        <p class="service-descriptions">Не только китайского,
-          но и настоящего местного производства!</p>
-        <img class="souvenirs.png" src="#" alt="Сувенир">
+        <p class="service-descriptions">Не только китайского, но и настоящего местного производства!</p>
     </ul>
       </section>
-      <section>
-        <p class="question">Заинтересовались?</p>
-        <p class="offer">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#">Поиск гостиницы в Седоне</a>
+      <section class="question">
+        <h2 class="question-title">Заинтересовались?</h2>
+        <h3 class="offer">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
+        <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
     </main>
     <footer>
-      <section>
-        <p class="subscribe">Подпишитесь на рассылку</p>
-        <p class="guaranties">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe">
+        <h2 class="subscribe">Подпишитесь на рассылку</h2>
+        <h3 class="guaranties">Только полезная информация и никакого спама, честное бойскаутское!</h3>
       <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="text" name="e-mail">
+        <input class="subscribe-title" type="e-mail" id="e-mail" required name="subscribe-email" placeholder="Ваш email">
         <button class="button" type="submit">Подписаться</button>
       </form>
     </section>
-  <section>
-      <ul class="links">
+  <section class="links">
+    <h3 class="social">Социальные сети</h3>
+      <ul class="links-list">
         <li class="links-item">
           <a class="link" href="#">
             <span class="visually-hidden">
@@ -136,10 +133,14 @@
           </span></a>
         </li>
       </ul>
-       <a href="#">+7(812)812-12-12</a>
+      <div>
+       <a class="number" href="#">+7(812)812-12-12</a>
+      </div>
+      <div>
        <a href="#" class="logo-link">
-        <img src="#" alt="" class="logo-image">
+        <img src="#" alt="Логотип html academy" class="logo-image">
       </a>
+    </div>
 </section>
     </footer>
   </body>
