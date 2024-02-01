@@ -1,24 +1,25 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
-  <body>
+  <body class="body">
     <header class="page-header">
       <a href="#" class="logo-link">
         <img src="images/logo.svg" width="138" height="64" alt="Логотип города" class="logo-image">
       </a>
-      <nav class="navigation">
+      <nav class="main-menu">
         <ul class="main-menu-list">
           <li class="main-menu-item">
             <a class="main-menu-link" href="#" >Главная</a>
           </li>
           <li class="main-menu-item">
-            <a class="navigation-link" href="№">О Седоне</a>
+            <a class="main-menu-link" href="№">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="main-menu-link" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-menu-list">
@@ -44,21 +45,17 @@
     </header>
     <main class="main-index">
       <section class="welcome">
-        <h1 class="main-title">Приветствие</h1>
-        <span class="visually-hidden">
-          Welcome to the georgius Sedona
-        </span>
-        <img class="panorama" src="images/panorama.jpg" width="1200" height="767" alt="Панорама">
-      </section>
-      <section class="preview">
-        <h1 class="sedona-city">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <h2 class="sedona-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
+        <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
+        <img class="panorama" src="images/welcome.svg" width="458" height="352" alt="Welcome to the georgius Sedona">
       </section>
       <section class="reasons">
+        <h2 class="visually-hidden">Причины посетить туристический город</h2>
+        <p class="sedona-city">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="sedona-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="reasons-list">
           <li class="reasons-item">
-            <h3 class="reasons-title">Настоящий городок</h3>
-            <p class="reasons-descriptions">Седона - не атрракцион для туристов, там течет своя жизнь</p>
+            <h3 class="reasons-title-white">Настоящий городок</h3>
+            <p class="reasons-descriptions-white">Седона - не атрракцион для туристов, там течет своя жизнь</p>
             <img class="city" width="800" height="385" src="images/city.jpg" alt="Город">
           </li>
           <li class="reasons-item">
@@ -74,15 +71,16 @@
             <p class="reasons-descriptions">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="reasons-item">
-            <h3 class="reasons-title">Там есть мост дьявола</h3>
-            <p class="reasons-descriptions">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="reasons-title-white">Там есть мост дьявола</h3>
+            <p class="reasons-descriptions-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="canyon" src="images/canyon.jpg" width="800" height="385" alt="Мост">
         </ul>
       </section>
       <section class="invitation">
-        <h2 class="invitation-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <h3 class="service">Опытный персонал и качественное обслуживание!</h3>
-      <ul class="service-list">
+        <h2 class="visually-hidden">Сервис</h2>
+        <p class="invitation-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p class="service">Опытный персонал и качественное обслуживание!</p>
+        <ul class="service-list">
       <li class="service-item">
         <h3 class="service-title">Жилье</h3>
         <p class="service-descriptions">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -97,22 +95,24 @@
     </ul>
       </section>
       <section class="question">
-        <h2 class="question-title">Заинтересовались?</h2>
-        <h3 class="offer">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
+        <h2 class="visually-hidden">Приглашение</h2>
+        <p class="question-title">Заинтересовались?</p>
+        <p class="offer">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
     </main>
     <footer>
       <section class="subscribe">
-        <h2 class="subscribe">Подпишитесь на рассылку</h2>
-        <h3 class="guaranties">Только полезная информация и никакого спама, честное бойскаутское!</h3>
+        <h2 class="visually-hidden">Подписка</h2>
+        <p class="subscribe">Подпишитесь на рассылку</p>
+        <p class="guaranties">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="subscribe-title" type="e-mail" id="e-mail" required name="subscribe-email" placeholder="Ваш email">
-        <button class="button" type="submit">Подписаться</button>
+        <button class="button-subscribe" type="submit">Подписаться</button>
       </form>
     </section>
   <section class="links">
-    <h3 class="social">Социальные сети</h3>
+    <h3 class="visually-hidden">Социальные сети</h3>
       <ul class="links-list">
         <li class="links-item">
           <a class="link" href="#">
