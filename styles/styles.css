@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.page-header {}
+
+.logo-link {}
+
+.nav {}
+
+.main-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu-item {}
+
+.main-menu-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.user-menu-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.panorama {
+  padding-top: 51px;
+  padding-left: 371px;
+  list-style: none;
+}
+.sedona-city {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+  text-align : center;
+}
+
+.sedona-reasons  {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  text-align : center;
+}
+
+
+.reasons-item {
+  margin: 0;
+  padding: 0;
+}
+
+
+.reasons-title-white  {
+  background: rgba(130, 179, 211, 1);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+
+.reasons-descriptions-white {
+  background: rgba(130, 179, 211, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+
+.reasons-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  list-style-type: none;
+}
+
+
+.reasons-descriptions {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+
+
+.invitation-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+  text-align : center;
+}
+
+
+.service  {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  text-align : center;
+}
+
+
+.service-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  list-style-type: none;
+}
+
+
+.service-descriptions {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+
+
+.question-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+  text-align : center;
+}
+
+
+.offer  {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  text-align : center;
+}
+
+
+.button {
+  background: rgba(117, 97, 87, 1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+
+.subscribe  {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  text-align : center;
+}
+
+
+.submit {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+
+.links-list {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.number {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+  text-align : center;
+  display: block;
+}
