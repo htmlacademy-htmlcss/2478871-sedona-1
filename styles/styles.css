@@ -21,6 +21,16 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -73,6 +83,7 @@
 }
 
 .user-menu-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -85,8 +96,7 @@
 .link-search {
   display: flex;
   flex-wrap: wrap;
-  background-image:
-  url(../images/search.svg);
+  background-image: url(../images/search.svg);
   Width: 44px;
   Height: 64px;
 }
@@ -94,8 +104,7 @@
 .link-favourits {
   display: flex;
   flex-wrap: wrap;
-  background-image:
-  url(../images/favourits.svg);
+  background-image: url(../images/favourits.svg);
   Width: 44px;
   Height: 64px;
 }
@@ -112,17 +121,20 @@
 }
 
 .welcome {
-  width: 1200px;
-  height: 485px;
-  background-size: cover;
-  background-image:
-  url(../images/index-background.png);
+  background-color: #82b3d3;
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 bottom 0, center top;
+  padding: 51px 0 82px;
+  background-size: 100% 57px, 1200px 485px;
+  min-height: 352px;
 }
 
 .panorama {
-  padding-top: 51px;
-  padding-left: 371px;
-  list-style: none;
+  flex-shrink: 0;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .sedona-city {
@@ -149,6 +161,7 @@
   margin: 0;
   padding: 0;
 }
+
 .reasons-item {
   margin: 0;
   padding: 0;
@@ -156,13 +169,15 @@
 }
 
 .reasons-title-white {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   background: #82b3d3;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #ffffff;
+  padding-top: 85px;
+  padding-bottom: 103px;
+  padding-left: 85px;
+  padding-right: 103px;
 }
 
 .reasons-descriptions-white {
@@ -214,9 +229,17 @@
   color: #000000;
   text-align: center;
 }
+
 .service-list {
   margin: 0;
   padding: 0;
+}
+
+.service-list:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../images/house.svg);
+  background-size: 75px 72px;
 }
 
 .service-title {
@@ -271,23 +294,22 @@
 .subscribe {
   margin: 0;
   padding: 0;
-  background-image:
-  url(../images/subsсribe.jpg);
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
+  background-image: url(../images/subsсribe.jpg);
   color: #ffffff;
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 24px;
-  padding-right: 24px;
+  display: flex;
+  background-size: 1200px 414,86px;
+  padding: 96px 258px 104px 258px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .guaranties {
   margin: 0;
   padding: 0;
 }
+
 .submit {
   font-size: 32px;
   font-weight: 700;
@@ -315,8 +337,7 @@
 .link-vk {
   display: flex;
   flex-wrap: wrap;
-  background-image:
-  url(../images/social-vk.svg);
+  background-image: url(../images/social-vk.svg);
   Width: 47.33px;
   Height: 40px;
 }
@@ -324,19 +345,17 @@
 .link-telegram {
   display: flex;
   flex-wrap: wrap;
-  background-image:
-  url(../images/social-telegram.svg);
+  background-image: url(../images/social-telegram.svg);
   Width: 47.33px;
   Height: 40px;
 }
 
 .link-youtube {
-    display: flex;
-    flex-wrap: wrap;
-    background-image:
-    url(../images/social-youtube.svg);
-    Width: 47.33px;
-    Height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../images/social-youtube.svg);
+  Width: 47.33px;
+  Height: 40px;
 }
 
 .number {
