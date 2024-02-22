@@ -99,16 +99,39 @@
   background-image: url(../images/search.svg);
   width: 44px;
   height: 64px;
-  margin-right: 1px;
 }
 
 .link-favourits {
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/favourits.svg);
+  text-decoration: none;
+  color: #000000;
+  background-image: url("../images/heart.svg");
   width: 44px;
   height: 64px;
   margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.numbers {
+  background-color: #7db54f;
+  display: flex;
+  min-width: 10px;
+  height: 18px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  position: absolute;
+  right: 5px;
+  top: 11px;
 }
 
 .link-want {
@@ -128,6 +151,22 @@
   height: 36px;
   box-sizing: border-box;
 
+}
+
+.link-want:hover {
+  background: #615048;
+}
+
+.link-want:focus {
+  background: #615048;
+}
+
+.link-want:active {
+  background: #756157;
+}
+
+.link-want:disabled {
+  background: #E5E5E5;
 }
 
 .welcome {
@@ -202,6 +241,7 @@
   padding: 0;
   padding-top: 114px;
   padding-bottom: 113px;
+  text-align: center;
 }
 
 .reasons-item:nth-child(2n) {
@@ -229,17 +269,16 @@
 
 .reasons-descriptions {
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  padding-left: 86px;
-  width: 300px;
+  width: 254px;
 }
 
-.reasons-item-blue .reasons-description {
+.reasons-item-blue .reasons-descriptions {
   color: #ffffff;
 }
 
@@ -398,6 +437,22 @@
   box-sizing: border-box;
 }
 
+.button:hover {
+  background: #615048;
+}
+
+.button:focus {
+  background: #615048;
+}
+
+.button:active {
+  background: #756157;
+}
+
+.button:disabled {
+  background: #E5E5E5;
+}
+
 .subscribe {
   background-color: #8fabb9;
   margin: 0;
@@ -433,7 +488,53 @@
 
 .mail-form {
   width: 684px;
-  margin: 70px auto;
+  display: flex;
+  text-align: center;
+  margin: 54px auto;
+}
+
+.subscribe-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 452px;
+  border: none;
+  min-height: 52px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.button-subscribe {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  background: #82B3D3;
+  width: 232px;
+  text-transform: uppercase;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.button-subscribe:hover {
+  background: #68A2CA;
+}
+
+.button-subscribe:focus {
+  background: #68A2CA;
+}
+
+.button-subscribe:active {
+  background: #82b3d3;
+}
+
+.button-subscribe:disabled {
+  background: #e5e5e5;
 }
 
 .submit {
@@ -485,17 +586,31 @@
 }
 
 .number-phone {
-  display: flex;
-  justify-content: center;
+  padding-right: 142px;
+  color: #000000;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400px;
+  line-height: 40px;
 }
 
 .number {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 40px;
   color: #000000;
-  text-align: center;
+  padding-left: 143px;
+  text-decoration: none;
   display: block;
+}
+
+.number:hover {
+  color: #756157;
+}
+
+.number:focus {
+  color: #756157;
+}
+
+.number:active {
+  color: rgba(117, 97, 87, 0.302);
 }
 
 .logo-html {
@@ -506,4 +621,29 @@
 .logo-link-html {
   margin-top: -89px;
   margin-right: 70px;
+}
+
+.main-catalog {
+  color: white;
+  background-image: url("../images/catalog/filtr.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 412px;
+}
+
+.search-option {
+  display: flex;
+  border: none;
+}
+
+.subscribe-1 {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  padding-top: 96px;
+  min-height: 415px;
+  box-sizing: border-box;
+}
+
+.mail-colour {
+  background-color: #F2F2F2;
 }
