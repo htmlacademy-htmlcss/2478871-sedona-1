@@ -6,12 +6,11 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
-
   <body class="body">
     <div class="container">
       <header class="page-header">
         <a href="#" class="logo-link">
-          <img src="images/logo.svg" width="138" height="64" alt="Логотип города" class="logo-image">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип города" class="logo-image">
         </a>
         <nav class="main-menu">
           <ul class="main-menu-list">
@@ -22,26 +21,23 @@
               <a class="main-menu-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="main-menu-link" href="#">Гостиницы</a>
+              <a class="main-menu-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-menu-list">
             <li class="user-menu-item">
               <a class="link-search" href="#">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="user-menu-item">
               <a class="link-favourits" href="#">
-                <span class="visually-hidden">
-                  Перейти в избранное
-                </span>
+                <span class="visually-hidden">Перейти в избранное</span>
+                <span class="numbers">12</span>
               </a>
             </li>
             <li class="user-menu-item">
-              <a class="link-want" href="#">Хочу сюда</a>
+              <a class="link-want" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -56,47 +52,49 @@
           <p class="sedona-city">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="sedona-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="reasons-list">
-            <li class="reasons-item-1">
-              <h3 class="reasons-title-1">Настоящий городок</h3>
-              <p class="reasons-descriptions-1">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              <img class="city" width="800" height="385" src="images/city.jpg" alt="Город">
+            <li class="reasons-item-blue">
+              <div class="reasons-blue-container">
+              <h3 class="reasons-title">Настоящий<br> городок</h3>
+              <p class="reasons-descriptions">Седона — не аттракцион для туристов, там течет своя<br> жизнь</p>
+            </div>
+              <img class="city-1" width="800" height="385" src="images/city.jpg" alt="Город">
             </li>
-            <div class="reasons-2-4">
-            <li class="reasons-item-2">
-              <h3 class="reasons-title-2">Небольшая<br> площадь</h3>
-              <p class="reasons-descriptions-2">Все достопримечательности находятся очень близко</p>
+            <li class="reasons-item">
+              <h3 class="reasons-title">Небольшая<br> площадь</h3>
+              <p class="reasons-descriptions">Все достопримечательности<br> находятся очень близко</p>
             </li>
-            <li class="reasons-item-3">
-              <h3 class="reasons-title-3">Красивая<br> дорога</h3>
-              <p class="reasons-descriptions-3">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            <li class="reasons-item">
+              <h3 class="reasons-title">Красивая<br> дорога</h3>
+              <p class="reasons-descriptions">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </li>
-            <li class="reasons-item-4">
-              <h3 class="reasons-title-4">Мало<br> туристов</h3>
-              <p class="reasons-descriptions-4">Большинство едет в Гранд Каньон и<br> толпится там</p>
+            <li class="reasons-item">
+              <h3 class="reasons-title">Мало<br> туристов</h3>
+              <p class="reasons-descriptions">Большинство едет в Гранд<br> Каньон и толпится там</p>
             </li>
-          </div>
-            <li class="reasons-item-5">
-              <h3 class="reasons-title-5">Там есть мост дьявола</h3>
-              <p class="reasons-descriptions-5">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img class="canyon" src="images/canyon.jpg" width="800" height="385" alt="Мост">
+            <li class="reasons-item-blue">
+              <div class="reasons-blue-container">
+              <h3 class="reasons-title">Там есть<br> мост дьявола</h3>
+              <p class="reasons-descriptions">Да, по нему можно пройти! Если вы осмелитесь,<br> разумеется</p>
+            </div>
+            <img class="canyon" src="images/canyon.jpg" width="800" height="385" alt="Мост">
           </ul>
         </section>
         <section class="invitation">
           <h2 class="visually-hidden">Сервис</h2>
-          <p class="invitation-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="invitation-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
           <p class="service">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
-            <li class="service-item">
-              <h3 class="service-title">Жилье</h3>
-              <p class="service-descriptions">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <li class="service-item-1 service-item-house">
+              <h3 class="service-title">Жильё</h3>
+              <p class="service-descriptions">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
-            <li class="service-item">
+            <li class="service-item-2 service-item-food">
               <h3 class="service-title">Еда</h3>
-              <p class="service-descriptions">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="service-descriptions">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="service-item">
+            <li class="service-item-3 service-item-gift">
               <h3 class="service-title">Сувениры</h3>
-              <p class="service-descriptions">Не только китайского, но и настоящего местного производства!</p>
+              <p class="service-descriptions">Не только китайского,<br> но и настоящего местного производства!</p>
           </ul>
         </section>
         <section class="question">
@@ -114,7 +112,7 @@
           <p class="guaranties">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-item" type="e-mail" id="e-mail" required name="subscribe-email"
-              placeholder="Ваш email">
+              placeholder="Ваш e-mail">
             <button class="button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
@@ -141,7 +139,7 @@
             </li>
           </ul>
           <div class="number-phone">
-            <a class="number" href="#">+7(812)812-12-12</a>
+            <a class="number" href="#">+7 (812) 812-12-12</a>
           </div>
           <div class="logo-html">
             <a href="#" class="logo-link-html">

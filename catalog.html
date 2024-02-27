@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body class="body">
+  <div class="container">
+    <header class="page-header">
+      <a href="#" class="logo-link">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип города" class="logo-image">
+      </a>
+      <nav class="main-menu">
+        <ul class="main-menu-list">
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="main-menu-link" href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="user-menu-list">
+          <li class="user-menu-item">
+            <a class="link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="user-menu-item">
+            <a class="link-favourits" href="#">
+              <span class="visually-hidden">Перейти в избранное</span>
+              <span class="numbers">12</span>
+            </a>
+          </li>
+          <li class="user-menu-item">
+            <a class="link-want" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-catalog">
+      <section>
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
+      </section>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <img class="icon-main-menu visually-hidden" src="#" alt="Главное меню"></a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-hostels">Гостиницы</a>
+        </li>
+      </ul>
+      <section class="search-option">
+        <h2 class="visually-hidden"> Параметры поиска с фильтрами</h2>
+        <fieldset class="search-option">
+          <legend class="search-option-title">Инфраструктура:</legend>
+          <ul class="search-option-list">
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="swimming pool" checked>Бассейн
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="parking" checked>Парковка
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="search-option second">
+          <legend class="search-option-title">Тип Жилья:</legend>
+          <ul class="search-option-list">
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="type-house" checked>Гостиница
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="type-house">Мотель
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="type-house">Апартаменты
+              </label>
+            </li>
+        </fieldset>
+        <fieldset class="search-option third">
+          <legend class="search-option-title">Стоимость, ₽:</legend>
+          <form class="cost" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="cost-item" type="number" id="#" required name="cost"
+              placeholder="от">
+          </form>
+          <form class="cost" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="cost-item" type="number" id="#" required name="cost"
+              placeholder="до">
+          </form>
+          <button class="button-apply" type="submit">Применить</button>
+        </fieldset>
+    </main>
+    <footer>
+      <section class="subscribe-1">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p class="subscribe-title">Подпишитесь на рассылку</p>
+        <p class="guaranties">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscribe-item mail-colour" type="e-mail" id="e-mail" required name="subscribe-email"
+            placeholder="Ваш email">
+          <button class="button-subscribe" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="links">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul class="links-list">
+          <li class="links-item">
+            <a class="link-vk" href="#">
+              <span class="visually-hidden">
+                Вконтакте
+              </span></a>
+          </li>
+          <li class="links-item">
+            <a class="link-telegram" href="#">
+              <span class="visually-hidden">
+                Телеграмм
+              </span></a>
+          </li>
+          <li class="links-item">
+            <a class="link-youtube" href="#">
+              <span class="visually-hidden">
+                Ютуб
+              </span></a>
+          </li>
+        </ul>
+        <div class="number-phone">
+          <a class="number" href="#">+7(812)812-12-12</a>
+        </div>
+        <div class="logo-html">
+          <a href="#" class="logo-link-html">
+            <img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип html academy"
+              class="logo-image">
+          </a>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>
