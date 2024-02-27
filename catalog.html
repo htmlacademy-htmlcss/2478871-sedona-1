@@ -49,53 +49,66 @@
       </section>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-                <img class="icon-main-menu" src="#" alt="Главное меню"></a>
+          <a class="breadcrumbs-link" href="index.html">
+            <img class="icon-main-menu visually-hidden" src="#" alt="Главное меню"></a>
         </li>
         <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+          <a class="breadcrumbs-hostels">Гостиницы</a>
         </li>
-    </ul>
-    <section class="search-option">
+      </ul>
+      <section class="search-option">
         <h2 class="visually-hidden"> Параметры поиска с фильтрами</h2>
         <fieldset class="search-option">
-            <legend class="search-option-title">Инфраструктура:</legend>
-            <ul class="search-option-list">
-                <li class="search-option-item">
-                    <label class="control">
-                        <input class="control-input" type="checkbox" name="swimming pool" checked>Бассейн
-                    </label>
-                </li>
-                <li class="search-option-item">
-                    <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>Парковка
-                    </label>
-                </li>
-                <li class="search-option-item">
-                    <label class="control">
-                        <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
-                    </label>
-                </li>
-            </ul>
+          <legend class="search-option-title">Инфраструктура:</legend>
+          <ul class="search-option-list">
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="swimming pool" checked>Бассейн
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="parking" checked>Парковка
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="search-option">
-            <legend class="search-option-title">Тип Жилья:</legend>
-            <ul class="search-option-list">
-                <li class="search-option-item">
-                    <label class="control">
-                        <input class="control-input" type="radio" name="type-house" checked>Гостиница
-                    </label>
-                </li>
-                <li class="search-option-item">
-                    <label class="control">
-                        <input class="control-input" type="radio" name="type-house">Мотель
-                    </label>
-                </li>
-                <li class="search-option-item">
-                    <label class="control">
-                        <input class="control-input" type="radio" name="type-house">Апартаменты
-                    </label>
-                </li>
+        <fieldset class="search-option second">
+          <legend class="search-option-title">Тип Жилья:</legend>
+          <ul class="search-option-list">
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="type-house" checked>Гостиница
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="type-house">Мотель
+              </label>
+            </li>
+            <li class="search-option-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="type-house">Апартаменты
+              </label>
+            </li>
+        </fieldset>
+        <fieldset class="search-option third">
+          <legend class="search-option-title">Стоимость, ₽:</legend>
+          <form class="cost" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="cost-item" type="number" id="#" required name="cost"
+              placeholder="от">
+          </form>
+          <form class="cost" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="cost-item" type="number" id="#" required name="cost"
+              placeholder="до">
+          </form>
+          <button class="button-apply" type="submit">Применить</button>
+        </fieldset>
     </main>
     <footer>
       <section class="subscribe-1">
