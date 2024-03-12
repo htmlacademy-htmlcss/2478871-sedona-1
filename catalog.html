@@ -22,7 +22,7 @@
             <a class="main-menu-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="main-menu-link" href="#">Гостиницы</a>
+            <a class="main-menu-link menu-active" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-menu-list">
@@ -53,11 +53,12 @@
           </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-hostels">Гостиницы</a>
+            <a class="breadcrumbs-hotels">Гостиницы</a>
           </li>
         </ul>
         <section class="search-list">
           <h2 class="visually-hidden"> Параметры поиска с фильтрами</h2>
+          <form class="cost" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="search-option-first">
             <legend class="search-option-title">Инфраструктура:</legend>
             <ul class="search-option-list">
@@ -94,27 +95,49 @@
           </fieldset>
           <fieldset class="search-option-third">
             <legend class="search-option-title">Стоимость, ₽:</legend>
-            <form class="cost" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="cost-from" type="number" placeholder="от">
-              <input class="cost-till" type="number" placeholder="до">
+            <div class="hotel-cost">
+              <input class="cost-from" type="text" placeholder="0" value="0" name="min-price">
+              <label class="cost-from-filter">от</label>
+              <input class="cost-till" type="text" placeholder="9000" value="9000" name="max-price">
+              <label class="cost-till-filter">до</label>
+            </div>
               <div class="container-scale">
                 <div class="scale"></div>
                 <div class="range"></div>
-                <button class="handler handler-min" type="button"></button>
-                <span class="visually-hidden">Установить нижнюю границу диапазона цены</span>
-                <button class="handler handler-max" type="button"></button>
-                <span class="visually-hidden">Установить верхнюю границу диапазона цены</span>
+                <button class="handler handler-min" type="button">
+                  <span class="visually-hidden">Установить нижнюю границу диапазона цены</span>
+                </button>
+                <button class="handler handler-max" type="button"><span class="visually-hidden">Установить верхнюю границу диапазона цены</span></button>
               </div>
-            </form>
-            <div class="buttons">
-              <button class="button-apply" type="submit">Применить</button>
-              <button class="button-throw" type="submit">Сбросить</button>
-            </div>
           </fieldset>
+          <div class="buttons">
+            <button class="button-apply" type="submit">Применить</button>
+            <button class="button-throw" type="reset">Сбросить</button>
+          </div>
+        </form>
         </section>
       </section>
       <section class="search-hotels">
         <p class="found">Найдено гостиниц: 38</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="number-stars">По количеству звезд</option>
+        </select>
+        <div class="button-cards">
+          <a class="button-card" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+            <span class="cards"></span>
+          </a>
+          <a class="button-card" href="#">
+            <span class="visually-hidden">Показать крупные карточки с описанием</span>
+            <span class="big-card"></span>
+          </a>
+          <a class="button-card" href="#">
+            <span class="visually-hidden">Показать список</span>
+            <span class="list-card"></span>
+          </a>
+        </div>
       </section>
       <section class="hotel-catalog">
         <ul class="hotel-list">
