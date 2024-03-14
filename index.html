@@ -150,6 +150,30 @@
         </section>
       </footer>
     </div>
+    <div class="modal modal-close">
+      <div class="modal-container">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" method="post">
+            <div class="form-container">
+              <label class="modal-label-form" for="arrival-date">Дата Заезда:</label>
+              <input type="text" id="arrival date" name="arrival-date" class="date" placeholder="27 апреля 2020">
+            </div>
+            <p class="comment"> Мы не можем отправить вас с прошлое.</p>
+            <div class="form-container">
+              <label class="modal-label-form" for="departure-date">Дата Выезда:</label>
+              <input type="text" id="departure-date" name="departure-date" class="date" placeholder="1 сентября 2023">
+            </div>
+            <p class="comment2">На эти даты есть свободные номера. Пока есть.</p>
+            <button class="button-modal" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="./skripts/script.js"></script>
   </body>
 
 </html>
