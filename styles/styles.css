@@ -1258,45 +1258,39 @@
   border-radius: 4px;
 }
 
+.button-card:hover {
+  border: 2px solid #e5e5e5;
+}
+
+.button-card:focus {
+  outline: none;
+  border: 2px solid #68a2ca;
+}
+
+.button-card:active {
+  border: 2px solid #000000;
+}
+
+.card-first {
+  background-image: url("../images/catalog/view1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-second {
+  background-image: url("../images/catalog/view2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .button-card-black {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
-.cards {
-  position: absolute;
-  top: 13px;
-  left: 16px;
-  display: block;
-  width: 47px;
-  height: 47px;
-  background-image: url("../images/catalog/view1.svg");
-  background-repeat: no-repeat;
-  text-align: center;
-  border: #000000;
-}
-
-.big-card {
-  position: absolute;
-  top: 13px;
-  left: 15px;
-  display: block;
-  width: 47px;
-  height: 47px;
-  background-image: url("../images/catalog/view2.svg");
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.list-card {
-  position: absolute;
-  top: 13px;
-  left: 12px;
-  display: block;
-  width: 47px;
-  height: 47px;
+.card-third {
   background-image: url("../images/catalog/view3.svg");
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: center;
 }
 
 .hotel-catalog {
@@ -1325,6 +1319,23 @@
 .hotel-link {
   text-decoration: none;
   color: #000000;
+}
+
+.hotel-link:hover {
+  opacity: 0.8;
+}
+
+.hotel-link:hover .hotel-card-image {
+  transform: scale(1.05);
+}
+
+.hotel-link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.hotel-link:active {
+  opacity: 0.3;
 }
 
 .hotel-title {
@@ -1367,7 +1378,21 @@
   padding-left: 27px;
 }
 
-.hotel-favoutites {
+.hotel-details:hover {
+  background: #615048;
+}
+
+.hotel-details:focus {
+  outline: none;
+  background: #615048;
+}
+
+.hotel-details:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #756157;
+}
+
+.hotel-favourites {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -1378,6 +1403,50 @@
   line-height: 20px;
   padding-top: 7px;
   padding-left: 21px;
+}
+
+.hotel-favourites:hover {
+  background: #68a2ca;
+}
+
+.hotel-favourites:focus {
+  outline: none;
+  background: #68a2ca;
+}
+
+.hotel-favourites:active {
+  color: rgba(255, 255, 255, 0.302);
+  background: #82b3d3;
+}
+
+.green-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 8px 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 140px;
+  height: 36px;
+  background: #7db54f;
+}
+
+.green-button:hover {
+  background: #6c9e42;
+}
+
+.green-button:focus {
+  outline: none;
+  background: #6c9e42;
+}
+
+.green-button:active {
+  background: #7db54f;
+  color: rgba(255, 255, 255, 0.302);
 }
 
 .stars-rating {
@@ -1535,6 +1604,19 @@
   color: #000000;
 }
 
+.pagination-link-more:hover {
+  background-color: #e6e6e6;
+}
+
+.pagination-link-more:focus {
+  outline: none;
+  background-color: #e6e6e6;
+}
+
+.pagination-link-more:active {
+  background-color: #f2f2f2;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1576,7 +1658,18 @@
   border: none;
 }
 
-.modal-content {}
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
 
 .modal-title {
   padding: 0;
@@ -1585,10 +1678,11 @@
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: 64px;
 }
 
 .modal-form {
-  margin-top: 63px;
+
 }
 
 .form-container {
@@ -1606,7 +1700,7 @@
 }
 
 .comment {
-  margin: 4px 0 24px 157px;
+  margin: 0 0 24px 157px;
   padding: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1626,10 +1720,225 @@
 .date {
   width: 440px;
   padding: 16px 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
+  background-image: url("../images/modal/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 14px right 20px
+}
+
+.date:hover {
+  background-color: #e6e6e6;
+}
+
+.date:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.date:active {
+  outline: 2px solid #000000;
+  background-color: #f2f2f2;
+}
+
+.container-persons {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  width: 577px;
+}
+
+.persons {
+  display: flex;
+  width: 247px;
+  gap: 46px;
+}
+
+.people-children {
+  width: 242px;
+}
+
+.container-number {
+  display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  min-width: 111px;
+}
+
+.minus {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 48px;
+  position: relative;
+}
+
+.minus:focus {
+  outline: none;
+}
+
+.minus-icon {
+  color: rgba(117, 97, 87, 0.302);
+}
+
+.minus-icon:hover {
+  color: #000000;
+}
+
+.minus-icon:focus {
+  outline: none;
+  color: #000000;
+}
+
+.minus:focus-within .minus-icon {
+  border-radius: 4px;
+  color: #000000;
+}
+
+.minus-icon:active {
+  opacity: 0.2;
+}
+
+.plus {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 48px;
+  position: relative;
+}
+
+.plus:focus {
+  outline: none;
+}
+
+.plus-icon {
+  color: rgba(117, 97, 87, 0.302);
+}
+
+.plus-icon:hover {
+  color: #000000;
+}
+
+.plus:focus-within .plus-icon {
+  border-radius: 4px;
+  color: #000000;
+}
+
+.plus-icon:active {
+  opacity: 0.2;
+}
+
+.persons-number {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: none;
+  width: 31px;
+  text-align: center;
+}
+
+.persons-number::-webkit-outer-spin-button,
+.persons-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.persons-number {
+  -moz-appearance: textfield;
+}
+
+.persons-number:focus {
+  outline: none;
+}
+
+.form-label {
+  display: flex;
+  width: 242px;
+  gap: 76px
+}
+
+.tultip {
+  position: absolute;
+  margin-left: 59px;
+  margin-top: 11px;
+}
+
+.tultip-toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.tultip-toggle:hover {
+opacity: 0.6;
+}
+
+.tultip-toggle:focus {
+outline: none;
+opacity: 0.6;
+}
+
+.tultip-toggle:active {
+opacity: 0.3;
+}
+
+.tultip-icon {
+  display: block;
+}
+
+.tultip-container {
+  position: absolute;
+  left: -115px;
+  top: 100%;
+  display: none;
+  padding-top: 15px;
+}
+
+.tultip-text {
+  box-sizing: border-box;
+  padding: 22px;
+  color: #ffffff;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 256px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+  display: block;
+}
+
+.tultip-text::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/modal/arrow.svg");
+  width: 19px;
+  height: 9px;
+  left: 117px;
+  top: -9px;
+}
+
+.tultip:hover .tultip-container {
+  display: block;
+}
+
+.tultip:focus-within .tultip-container {
+  display: block;
 }
 
 .button-modal {
@@ -1645,4 +1954,18 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.button-modal:hover {
+  background-color: #68a2ca;
+}
+
+.button-modal:focus {
+  outline: none;
+  background-color: #68a2ca;
+}
+
+.button-modal:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.302);
 }
