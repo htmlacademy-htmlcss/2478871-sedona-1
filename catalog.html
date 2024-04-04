@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" href="favicon.ico">
 </head>
-
 <body class="body">
   <div class="container">
     <header class="page-header">
@@ -104,13 +102,14 @@
                   <input class="radio-input visually-hidden" type="radio" id="apartment" name="type-house" checked>
                   <label class="radio-label" for="apartment">Апартаменты</label>
                 </li>
+              </ul>
             </fieldset>
             <fieldset class="search-option-third">
               <legend class="search-option-title">Стоимость, ₽:</legend>
               <div class="hotel-cost">
-                <input class="cost-from" type="text" placeholder="0" value="0" name="min-price">
+                <input class="cost-input" type="text" placeholder="0" value="0" name="min-price">
                 <label class="cost-from-filter">от</label>
-                <input class="cost-till" type="text" placeholder="9000" value="9000" name="max-price">
+                <input class="cost-input cost-till" type="text" placeholder="9000" value="9000" name="max-price">
                 <label class="cost-till-filter">до</label>
               </div>
               <div class="container-scale">
@@ -131,7 +130,8 @@
         </section>
       </section>
       <section class="search-hotels">
-        <p class="found">Найдено гостиниц: 38</p>
+        <h2 class="visually-hidden">Калибратор гостиниц</h2>
+        <div class="found">Найдено гостиниц: 38</div>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -249,8 +249,8 @@
         <p class="subscribe-title">Подпишитесь на рассылку</p>
         <p class="guaranties">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe-item mail-colour" type="e-mail" id="e-mail" required name="subscribe-email"
-            placeholder="Ваш email">
+          <input class="subscribe-item mail-colour" type="email" id="e-mail" required name="subscribe-email"
+            placeholder="Ваш e-mail">
           <button class="button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
