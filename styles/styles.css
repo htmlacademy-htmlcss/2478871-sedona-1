@@ -1664,7 +1664,7 @@
   background: rgba(242, 242, 242, 0.8);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 
 }
