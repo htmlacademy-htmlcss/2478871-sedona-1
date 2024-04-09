@@ -653,6 +653,7 @@
 .links {
   display: flex;
   padding-bottom: 20px;
+  width: 1200px;
 }
 
 .links-list {
@@ -728,6 +729,7 @@
 .logo-html {
   padding-top: 49px;
   padding-left: 94px;
+  width: 100px;
 }
 
 .logo-link-html {
@@ -1199,11 +1201,16 @@
   color: rgba(255, 255, 255, 0.302);
 }
 
+.button-throw:disabled {
+  background-color: rgba(229, 229, 229, 1);
+}
+
 .search-hotels {
   display: flex;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 1140px;
 }
 
 .found {
@@ -1215,6 +1222,8 @@
   line-height: 36px;
   text-transform: uppercase;
   padding: 58px 71px 47px;
+  width: 481px;
+  box-sizing: border-box;
 }
 
 .select-control {
@@ -1230,7 +1239,7 @@
   width: 292px;
   height: 49px;
   padding: 15px 17px 9px 16px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   appearance: none;
   background-image: url(../images/catalog/down.svg);
   background-repeat: no-repeat;
@@ -1248,6 +1257,10 @@
 
 .select-control:active {
   border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3)
 }
 
 .button-cards {
@@ -1651,7 +1664,7 @@
   background: rgba(242, 242, 242, 0.8);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 
 }
@@ -1668,6 +1681,7 @@
   padding: 64px 70px 64px 70px;
   border-radius: 30px;
   box-sizing: border-box;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .modal-close-button {
@@ -1703,7 +1717,7 @@
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 37px;
+  margin-bottom: 64px;
 }
 
 .modal-form {}
@@ -1711,7 +1725,8 @@
 .form-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 18px;
 }
 
 .modal-label-form {
@@ -1720,12 +1735,12 @@
   line-height: 24px;
   align-items: center;
   text-transform: capitalize;
-  margin-top: -18px;
+  padding-top: 12px;
 }
 
 .comment {
-  margin: 0 0 24px 20px;
-  padding: 0;
+  margin: 0 0 5px 20px;
+  padding: 4px 0 0 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1749,7 +1764,8 @@
   box-sizing: border-box;
   background-image: url("../images/modal/calendar.svg");
   background-repeat: no-repeat;
-  background-position: bottom 14px right 20px margin-top: 25px;
+  background-position: bottom 14px right 20px;
+  height: 48px;
 }
 
 .date:hover {
@@ -1869,6 +1885,10 @@
   border: none;
   width: 31px;
   text-align: center;
+}
+
+.persons-two {
+  padding: 3px 0 0 7px;
 }
 
 .persons-number::-webkit-outer-spin-button,
