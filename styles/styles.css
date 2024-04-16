@@ -286,7 +286,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  color: #000000;
+  color: #333333;
   text-align: center;
 }
 
@@ -400,7 +400,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  color: #000000;
+  color: #333333;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 64px;
@@ -456,7 +456,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
   text-align: center;
   margin: 28px auto 82px;
   width: 230px;
@@ -504,7 +504,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  color: #000000;
+  color: #333333;
   text-align: center;
   width: 600px;
 }
@@ -786,12 +786,13 @@
 
 .breadcrumbs-link {
   display: block;
+  background-image: url("../images/catalog/house.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 20px;
   height: 19px;
-  margin-left: 70px;
-  margin-top: 6px;
+  margin-left: 68px;
+  margin-top: 8px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -1029,6 +1030,7 @@
   padding: 4px 40px 0 21px;
   box-sizing: border-box;
   margin-right: 2px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .cost-till {
@@ -1991,6 +1993,7 @@
   background: #83B3D3;
   border-radius: 10px;
   border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
