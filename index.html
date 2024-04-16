@@ -181,7 +181,7 @@
   </div>
   <div class="modal modal-close">
     <div class="modal-container">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -190,14 +190,14 @@
           <div class="form-container">
             <label class="modal-label-form" for="arrival-date">Дата Заезда:</label>
             <div class="modal-input-form">
-            <input type="text" id="arrival-date" name="arrival-date" class="date" value="27 апреля 2020">
+            <input type="text" id="arrival-date" name="arrival-date" required class="date" value="27 апреля 2020">
           <p class="comment comment-error"> Мы не можем отправить вас с прошлое.</p>
         </div>
       </div>
           <div class="form-container">
             <label class="modal-label-form" for="departure-date">Дата Выезда:</label>
             <div class="modal-input-form">
-            <input type="text" id="departure-date" name="departure-date" class="date" value="1 сентября 2023">
+            <input type="text" id="departure-date" name="departure-date" required class="date" value="1 сентября 2023">
           <p class="comment">На эти даты есть свободные номера. Пока есть.</p>
         </div>
       </div>
@@ -211,7 +211,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                   </svg>
                 </button>
-                <input class="persons-number" type="number" min="0" id="adults" name="adults" placeholder="2" value="2">
+                <input class="persons-number" type="number" min="0" id="adults" name="adults" required placeholder="2" value="2">
                 <button class="plus" type="button">
                   <svg class="plus-icon" width="20" height="20" role="img" aria-label="Плюс" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -244,7 +244,7 @@
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="persons-number persons-two" type="number" min="0" id="children" name="children" placeholder="2" value="2">
+                  <input class="persons-number persons-two" type="number" min="0" id="children" name="children" required placeholder="2" value="2">
                   <button class="plus" type="button">
                     <svg class="plus-icon" width="20" height="20" role="img" aria-label="Кнопка" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
