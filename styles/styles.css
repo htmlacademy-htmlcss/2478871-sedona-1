@@ -1836,7 +1836,7 @@
 }
 
 .minus:focus-within .minus-icon {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
   border-radius: 4px;
   color: #000000;
 }
@@ -1868,7 +1868,7 @@
 }
 
 .plus:focus-within .plus-icon {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
   border-radius: 4px;
   color: #000000;
 }
